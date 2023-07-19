@@ -19,8 +19,10 @@
   <body class="page-container">
     <header class="top-section">
       <div class="container header-contr">
+
         <nav class="header-contr-box">
           <a class="link logo lgo-top" href="./index.html">Web<span class="top-sec-studio-cl">Studio</span></a>
+
           <ul class="menu-box list">
             <li><a class="link menu active" href="./index.html">Studio</a></li>
             <li><a class="menu link" href="./portfolio.html">Portfolio</a></li>
@@ -38,18 +40,28 @@
             </li>
           </ul>
         </address>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu">
+          <svg class="menu-toggle-icon"
+            width="32"
+            height="22">
+            <use class="burger-icon" href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
     <main class="main-container">
-      
+
       <!--hero section -->
-      <section class="main-page">
+      <!-- <section class="main-page">
         <div class="container main-box">
           <h1 class="main-page-title">Effective Solutions for Your Business</h1>
           <button class="mp-btn-order" type="button" data-modal-open>Order Service</button>
         </div>
-      </section>
+      </section> -->
 
       <!--advantages section-->
       <section class="advant-section">
@@ -111,7 +123,10 @@
           <ul class="list pic-box">
             <li class="pic-box-item">
               <img class="pic"
-              src="./images/pcmonitor.jpg"
+              srcset="
+              ./images/pcmonitor@1x.png 1x,
+              ./images/pcmonitor@2x.png 2x"
+              src="./images/pcmonitor@1x.png"
               width="360"
               height="300"
               alt="pc monitor with graphs"
@@ -119,7 +134,10 @@
             </li>
             <li class="pic-box-item">
               <img class="pic"
-              src="./images/phonemultiscreen.jpg"
+              srcset="
+              ./images/phonemultiscreen@1x.png 1x,
+              ./images/phonemultiscreen@2x.png 2x"
+              src="./images/phonemultiscreen@1x.png
               width="360"
               height="300"
               alt="phone with multi screen shots"
@@ -127,7 +145,10 @@
             </li>
             <li class="pic-box-item">
               <img class="pic"
-              src="./images/devicessinc.jpg"
+              srcset="
+              ./images/devicessinc@1x.png 1x,
+              ./images/devicessinc@2x.png 2x"
+              src="./images/devicessinc@1x.png"
               width="360"
               height="300"
               alt="a phone with notebook"
@@ -143,7 +164,14 @@
           <h2 class="second-lev-title team-title">Our Team</h2>
           <ul class="list team-pic-box">
             <li class="list-item team-box-item">
-              <img class="pic" src="./images/mark.jpg" width="264" height="260" alt="smiling men Mark Guerrero"/>
+              <img class="pic"
+              srcset="
+              ./images/mark@1x.png 1x,
+              ./images/mark@2x.png 2x"
+              src="./images/mark@1x.png" 
+              width="264" 
+              height="260" 
+              alt="smiling men Mark Guerrero"/>
               <div class="tm-text">
                   <h3 class="third-lev-title tm-name">Mark Guerrero</h3>
                   <p class="parag">Product Designer</p>
@@ -184,7 +212,14 @@
               </div>
             </li>
             <li class="list-item team-box-item">
-              <img class="pic" src="./images/tom.jpg" width="264" height="260" alt="smiling men Tom Ford"/>
+              <img class="pic" 
+              srcset="
+              ./images/tom@1x.png 1x,
+              ./images/tom@2x.png 2x"
+              src="./images/tom@1x.png" 
+              width="264" 
+              height="260" 
+              alt="smiling men Tom Ford"/>
               <div class="tm-text">
                 <h3 class="third-lev-title tm-name">Tom Ford</h3>
                 <p class="parag">Frontend Developer</p>
@@ -225,7 +260,14 @@
               </div>
             </li>
             <li class="list-item team-box-item">
-              <img class="pic" src="./images/camila.jpg" width="264" height="260" alt="smiling women Camila Garcia"/>
+              <img class="pic" 
+              srcset="
+              ./images/camila@1x.png 1x,
+              ./images/camila@2x.png 2x"
+              src="./images/camila@1x.png" 
+              width="264" 
+              height="260" 
+              alt="smiling women Camila Garcia"/>
               <div class="tm-text">
                 <h3 class="third-lev-title tm-name">Camila Garcia</h3>
                 <p class="parag">Marketing</p>
@@ -266,7 +308,15 @@
               </div>
             </li>
             <li class="list-item team-box-item">
-              <img class="pic" src="./images/daniel.jpg" width="264" height="260" alt="smiling men Daniel Wilson"/>
+              <img class="pic" 
+              srcset="
+              ./images/daniel@1x.png 1x,
+              ./images/daniel@2x.png 2x"
+              src="./images/camila@1x.png" 
+              src="./images/daniel@1x.png" 
+              width="264" 
+              height="260" 
+              alt="smiling men Daniel Wilson"/>
               <div class="tm-text">
                 <h3 class="third-lev-title tm-name">Daniel Wilson</h3>
                 <p class="parag">UI Designer</p>
@@ -311,7 +361,7 @@
       </section>
 
       <!--customers section-->
-      <section class="customers-section">
+      <!-- <section class="customers-section">
         <div class="container custom-contr">
           <h2 class="second-lev-title custom-cont-title">Customers</h2>
           <ul class="custom-box">
@@ -365,11 +415,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
 
-<!--Footer section-->
-    <footer class="bottom-section">
+      <!--Footer section-->
+     <!-- <footer class="bottom-section">
       <div class="container ftr-contr">
         <div class="logo-box"><a class="logo link lgo-btm" href="./index.html">Web<span class="studio-cl">Studio</span></a>
         <p class="bottom-text">
@@ -429,10 +479,9 @@
           </form>
         </div>
       </div>
-    </footer>      
+     </footer>       -->
 
-    <!--modal section-->
-
+     <!--modal section-->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btn" type="button" data-modal-close>
@@ -518,6 +567,80 @@
         
       </div>
     </div>
+
+    <!-- mobile menu-->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle-x js-close-menu">
+        <svg         
+          width="8"
+          height="8">
+          <use class="menu-toggle-x-icon" href="./images/icons.svg#icon-x-btn"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="" class="m-m-link">Studio</a></li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="" class="m-m-link">Portfolio</a></li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="" class="m-m-link">Contacts</a></li>    
+      </ul>
+      
+      <ul class="company-conts-box">
+        <li class="company-tei">
+          <a class="tel" href="tel:+110001111111">+11 (000) 111-11-11</a>
+        </li>
+        <li class="company-mail">
+          <a class="mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+      </ul>
+
+      <ul class="soc-conts-box">
+        <li class="soc-conts-item">
+          <a class="ftr-soc-conts-link" href="" aria-label="icon-instagram">
+          <svg class="ftr-soc-conts-icon"
+            width="24" height="24">
+            <use href="./images/icons.svg#icon-instagram"></use>
+          </svg>  
+          </a>
+        </li>
+        <li class="soc-conts-item">
+          <a class="ftr-soc-conts-link" href="" aria-label="icon-twitter">
+          <svg class="ftr-soc-conts-icon"
+            width="24" height="24">
+            <use href="./images/icons.svg#icon-twitter"></use>
+          </svg>  
+          </a>
+        </li>
+        <li class="soc-conts-item">
+          <a class="ftr-soc-conts-link" href="" aria-label="icon-facebook">
+          <svg class="ftr-soc-conts-icon"
+            width="24" height="24">
+            <use href="./images/icons.svg#icon-facebook"></use>
+          </svg>  
+          </a>
+        </li>
+        <li class="soc-conts-item">
+          <a class="ftr-soc-conts-link" href="" aria-label="icon-linkedin">
+          <svg class="ftr-soc-conts-icon"
+            width="24" height="24">
+            <use href="./images/icons.svg#icon-linkedin"></use>
+          </svg>  
+          </a>
+        </li>
+      </ul>
+      
+
+    </div>
+
+    <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
+
     <script src="./js/modal.js"></script>
   </body>
 </html>
