@@ -754,8 +754,13 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     .ftr-input::placeholder {color: #FFFFFF;} 
 
   /* footer for tablets */
+
+
 @media only screen and (min-width: 768px) {
-  .bottom-section {display: flex; justify-content: center; align-items: center;}
+  .bottom-section {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;}
   .ftr-contr {
     display: flex; 
     justify-content: start;
@@ -763,7 +768,7 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     flex-wrap: wrap;
     align-items: start;
     gap: 72px 24px;    
-    padding-left: 108px;
+    /* padding-left: 108px; */
   /* max-width: 552px; */}
   
   .logo-box {display: flex; 
@@ -792,6 +797,7 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     width: 453px;}   
   .ftr-label {width: 264px;}
   .ftr-input {width: 264px;}}
+  @media screen and (min-width: 768px) and (max-width: 1157px) {.ftr-contr {max-width: 552px;}}
 
 /* footer for PC */
 
